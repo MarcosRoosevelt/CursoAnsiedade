@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* VARIABLES */
+:root {
+    --header-height: 10rem;
+
+    --body-color: #030335;
+    --button-color: #FF6239;
+    --box-color: #524E45;
+    --title-color: #FFFFFF;
+    --title-color-second: #FF6239;
+    --text-color: #FFFFFF;
+    --price-color: #004F56;
+    --divider-color: #FFE7A1;
+}
+
+/* BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+/* LAYOUT */
+a.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    height: 6rem;
+    width: 90vw;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.2rem;
+    border-radius: 1.25rem;
+    font: 1.25rem Montserrat, sans-serif;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--divider-color);
+}
+
+/* HEADER */
+header#header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+header#header .logo img {
+    height: 10rem;
+}
+
+/* INITIAL PAGE */
+section.initial-page div.texts {
+    height: 100vh;
+    width: 100%;
+
+    display: inline-block;
+}
+
+section.initial-page div.texts h1 {
+    font: 900 2.75rem Montserrat, sans-serif;
+    color: var(--text-color);
+    line-height: 6rem;
+
+    text-align: center;
+}
+
+section.initial-page div.texts p {
+    font: 1.25rem Noto Sans, sans-serif;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* ISSUES */
+section.issues .presentation {
+    display: grid;
+
+    width: 100%;
+
+    margin-top: 1.25rem;
+}
+
+section.issues .presentation img {
+    height: 40vh;
+    width: 40vw;
+
+    margin: auto;
+}
+
+section.issues .presentation h2 {
+    margin-top: 2rem;
+
+    font: 500 1.25rem Noto Sans, sans-serif;
+    color: var(--text-color);
+    text-align: center;
+}
+
+section.issues .phrases {
+    margin-top: 2rem;
+
+    height: 40vh;
+}
+
+section.issues .phrases .first-phrase, 
+section.issues .phrases .second-phrase {
+    background-color: var(--box-color);
+    border-radius: 0.25rem;
+    height: 5rem;
+
+    padding: 1.8rem 0 2rem 0.6rem;
+
+    margin: 0 0.5rem 0.2rem 0.5rem;
+}
+
+section.issues .phrases .third-phrase {
+    background-color: var(--box-color);
+    border-radius: 0.25rem;
+    height: 5rem;
+
+    padding: 1rem 0.6rem 0 0.6rem;
+
+    margin: 0 0.5rem 0.2rem 0.5rem;
+}
+
+section.issues .phrases .first-phrase p,
+section.issues .phrases .second-phrase p {
+    font: 400 1rem Noto Sans, sans-serif;
+    color: var(--text-color);
+    text-align: justify; 
+}
+
+section.issues .phrases .third-phrase p {
+    font: 400 1rem Noto Sans, sans-serif;
+    color: var(--text-color);
+    text-align: justify; 
+}
+
+section.issues .final-phrase {
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+section.issues .final-phrase p {
+    font: 600 1.4rem Poppins, sans-serif;
+    color: var(--text-color);
+    text-align: center; 
+}
+
+/* LIFE ISSUES */
+section.life-issues .header {
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.life-issues .header h1 {
+
+    font: 600 1.5rem Poppins, sans-serif;
+    color: var(--text-color);
+    text-align: center;
+}
+
+section.life-issues .fields {
+    margin-top: 2rem;
+
+    height: 110vh;
+}
+
+section.life-issues .fields .box {
+    height: 10rem;
+    background-color: var(--box-color);
+
+    padding: 2rem 1rem 2rem 1rem;
+
+    margin: 0 .5rem 0.9rem .5rem;
+
+    border-radius: .5rem;
+}
+
+section.life-issues .fields .box h1 {
+    font: 600 1.5rem Poppins, sans-serif;
+    color: var(--title-color-second);
+    text-align: justify;
+
+    margin-bottom: 0.3rem;
+}
+
+section.life-issues .fields .box p {
+    font: 500 1rem Noto Sans, sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+section.life-issues .fields .health span {
+    font: italic 300 1rem Noto Sans, serif;
+    color: var(--text-color);
+    text-align: justify;
+}
+
