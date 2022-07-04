@@ -258,9 +258,11 @@ section.data .graphs h1 {
 
 section.data .graphs .images-graphs {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
 
-    margin: 1rem;
+    margin: 2rem;
 
     
 }
