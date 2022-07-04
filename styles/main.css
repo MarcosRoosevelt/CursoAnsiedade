@@ -102,8 +102,8 @@ section.issues .presentation {
 }
 
 section.issues .presentation img {
-    height: 30vh;
-    width: 30vw;
+    height: 40vh;
+    width: 60vw;
 
     margin: auto;
 }
@@ -126,17 +126,17 @@ section.issues .phrases .first-phrase,
 section.issues .phrases .second-phrase {
     background-color: var(--box-color);
     border-radius: 0.25rem;
-    height: 6rem;
+    height: 5rem;
 
-    padding: 1.8rem 0 2rem 0.6rem;
+    padding: 1.3rem .2rem 2rem 0.6rem;
 
-    margin: 0 0.5rem 0.2rem 0.5rem;
+    margin: 0 .5rem .2rem 0.5rem;
 }
 
 section.issues .phrases .third-phrase {
     background-color: var(--box-color);
     border-radius: 0.25rem;
-    height: 5rem;
+    height: 6rem;
 
     padding: 1rem 0.6rem 0 0.6rem;
 
@@ -191,8 +191,6 @@ section.life-issues .header h1 {
 
 section.life-issues .fields {
     margin-top: 2rem;
-
-    height: 110vh;
 }
 
 section.life-issues .fields .box {
@@ -215,7 +213,7 @@ section.life-issues .fields .box h1 {
 }
 
 section.life-issues .fields .box p {
-    font: 500 1rem Noto Sans, sans-serif;
+    font: 500 .9rem Noto Sans, sans-serif;
     color: var(--text-color);
     text-align: justify;
 }
@@ -257,14 +255,14 @@ section.data .graphs h1 {
 }
 
 section.data .graphs .images-graphs {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
 
-    margin: 2rem;
-
-    
+section.data .graphs .images-graphs img {
+    width: 60vw;
+    height: 40vh;
 }
 
 section.data .graphs p {
